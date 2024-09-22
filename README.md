@@ -89,7 +89,7 @@ Com os dados que o servidor recebe do Wokwi, através de um código em Python el
 Nosso projeto possui 3 camadas: 
 - IoT (Nesse caso, a ESP32 conectada ao Motor no simulador), que recebe e envia dados;
 - Back-end, responsável por tratar e encaminhar todos os dados recebidos e enviados. Na nossa arquitetura, o MQTT, o Orion e o STH-Comet que estão hospedados no nosso servidor são os agentes responsáveis por todo esse processo por trás dos panos.
-- Aplicação (Nesse caso o Dashboard), responsável por mostrar todos os dados de maneira formatada, organizada e simplificada ao usuário.
+- Aplicação (Nesse caso o Dashboard), responsável por mostrar todos os dados de maneira formatada, organizada e simplificada ao usuário, como por exemplo os dois gráficos do nosso dashboard.
 
 
 
