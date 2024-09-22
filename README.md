@@ -18,7 +18,7 @@ Nosso cliente é a Tech Mahindra, uma empresa indiana multinacional de serviços
 A Tech Mahindra nos desafiou a aumentar a visibilidade da Fórmula E, uma modalidade de corrida de carros elétricos que não é muito conhecida.
 
 ## ✅ A nossa Solução
-- Após realizarmos algumas pesquisas de campo com as pessoas, descobrimos que as pessoas mais velhas até conhecem e gostam, mas não possuem tempo para assistir. Já os mais jovens simplesmente não connhecem a Fórmula E.
+- Após realizarmos algumas pesquisas de campo com as pessoas, descobrimos que as pessoas mais velhas até conhecem e gostam, mas não possuem tempo para assistir. Já os mais jovens simplesmente não conhecem a Fórmula E.
 - Com esses dados, após um brainstorming de ideias, chegamos na ideia de firmar parcerias com escolas, para fins de realizar apresentações para os alunos sobre a Fórmula E, com diversos temas, entre eles:
   - A História da Fórmula E
   - O que são e como funcionam os Carros Elétricos
