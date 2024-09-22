@@ -63,3 +63,9 @@ O Postman facilita a manipulação do JSON, separando cada funcionalidade por ab
 
 ![image](https://github.com/user-attachments/assets/c711ad81-3f79-4284-a3df-72ef2c3d1f63)
 
+É importante realizar os Health Checks do IOT Agent MQTT, do STH-Comet e do Orion Context Broker:
+![image](https://github.com/user-attachments/assets/64d82cd1-ded9-4a06-91c5-7e4053d5362e)
+![image](https://github.com/user-attachments/assets/44ee9680-1666-4df7-97db-0fc8211ded5c)
+![image](https://github.com/user-attachments/assets/108d2af8-c06c-43a5-a0d4-e792bd6e58b6)
+
+
