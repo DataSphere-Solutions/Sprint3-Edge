@@ -61,16 +61,17 @@ Além disso, é feito uma conexão com o WiFi do simulador, possibilitando assim
 
 O Postman facilita a manipulação do JSON, separando cada funcionalidade por abas:
 
-![image](https://github.com/user-attachments/assets/c711ad81-3f79-4284-a3df-72ef2c3d1f63)
+![image](https://github.com/user-attachments/assets/18ed7013-4738-4c44-8916-e565828e2a40)
 
 É importante realizar os Health Checks do IOT Agent MQTT, do STH-Comet e do Orion Context Broker:
 ![image](https://github.com/user-attachments/assets/64d82cd1-ded9-4a06-91c5-7e4053d5362e)
 ![image](https://github.com/user-attachments/assets/44ee9680-1666-4df7-97db-0fc8211ded5c)
 ![image](https://github.com/user-attachments/assets/108d2af8-c06c-43a5-a0d4-e792bd6e58b6)
 Os Health Checks nos informam se os serviços estão conseguindo comunicar corretamente com o servidor.
+
 ![image](https://github.com/user-attachments/assets/e76c43c2-16aa-4647-87cb-63aec2a5d711)
 
 Importante: Definir a variável {{url}} como o IP do servidor.
 
-
+- Nesta lista de operações, é possível receber os dados de velocidade e direção, bem como enviá-los ao Wokwi.
 
