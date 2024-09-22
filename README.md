@@ -67,5 +67,9 @@ O Postman facilita a manipulação do JSON, separando cada funcionalidade por ab
 ![image](https://github.com/user-attachments/assets/64d82cd1-ded9-4a06-91c5-7e4053d5362e)
 ![image](https://github.com/user-attachments/assets/44ee9680-1666-4df7-97db-0fc8211ded5c)
 ![image](https://github.com/user-attachments/assets/108d2af8-c06c-43a5-a0d4-e792bd6e58b6)
+Os Health Checks nos informam se os serviços estão conseguindo comunicar corretamente com o servidor.
+![image](https://github.com/user-attachments/assets/e76c43c2-16aa-4647-87cb-63aec2a5d711)
+Importante: Definir a variável {{url}} como o IP do servidor.
+
 
 
