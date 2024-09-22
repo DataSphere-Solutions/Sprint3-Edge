@@ -96,4 +96,6 @@ Nosso projeto possui 3 camadas:
 - Aplicação (Nesse caso o Dashboard), responsável por mostrar todos os dados de maneira formatada, organizada e simplificada ao usuário, como por exemplo os dois gráficos do nosso dashboard.
 
 
+## Link do Vídeo Explicativo no YouTube
+- O Link do vídeo explicativo pode ser encontrado [aqui](https://youtu.be/YxF1HlQ5f6g).
 
