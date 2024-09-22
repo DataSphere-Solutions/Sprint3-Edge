@@ -50,6 +50,8 @@ Configuração de portas da máquina virtual:
 
 ![image](https://github.com/user-attachments/assets/5a816894-5014-4ac4-a535-e0055ceff7ab)
 
+Github do Fiware Descomplicado:
+- https://github.com/fabiocabrini/fiware
 
 ### Postman
 
