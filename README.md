@@ -29,3 +29,7 @@ A Tech Mahindra nos desafiou a aumentar a visibilidade da Fórmula E, uma modali
 - Planejamos também agendar visitas de nomes importantes da Fórmula E às escolas, como pilotos.
 - E por último, planejamos agendar passeios escolares para pistas de corrida, e para marcas que competem na Fórmula E.
 - Tudo isso irá introduzir os alunos ao meio da Fórmula E, trazendo uma maior visibilidade a modalidade.
+
+## 💡 Nossa entrega para a Sprint 3 da matéria Edge Computing
+Para esta entrega, desenvolvemos um protótipo de motor de carrinho elétrico no simulador Wokwi, onde é possível controlar sua direção (b: para trás, f: para frente, s: parar) e sua velocidade através do serial do simulador, via comandos:
+![image](https://github.com/user-attachments/assets/a24c2465-6566-4395-8e59-9e95b05fd763)
