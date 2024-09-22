@@ -79,9 +79,16 @@ Importante: Definir a variável {{url}} como o IP do servidor.
 
 - Nesta lista de operações, é possível receber os dados de velocidade e direção, bem como enviá-los ao Wokwi.
 
+### Link da coleção do Postman
+A coleção do Postman para controlar a API pode ser encontrada aqui:
+- [https://github.com/DataSphere-Solutions/Sprint3-Edge/blob/main/dashboard/api.py](https://github.com/DataSphere-Solutions/Sprint3-Edge/blob/main/postman/Sprint%203%20Edge%20Api.postman_collection.json)
+
 ### Dashboard
 Com os dados que o servidor recebe do Wokwi, através de um código em Python ele plota uma Dashboard online, onde qualquer pessoa pode acessar, com dois gráficos: O da velocidade e velocidade média, e o da direção, ambos os gráficos são atualizados em tempo real:
 ![image](https://github.com/user-attachments/assets/43868954-4093-43cb-b948-802f95a29a1d)
+
+O código do Dashboard pode ser encontrado aqui: 
+- https://github.com/DataSphere-Solutions/Sprint3-Edge/blob/main/dashboard/api.py
 
 
 ## Arquitetura da Aplicação IoT
