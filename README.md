@@ -61,7 +61,7 @@ Além disso, é feito uma conexão com o WiFi do simulador, possibilitando assim
 
 O Postman facilita a manipulação do JSON, separando cada funcionalidade por abas:
 
-![image](https://github.com/user-attachments/assets/18ed7013-4738-4c44-8916-e565828e2a40)
+![image](https://github.com/user-attachments/assets/e39a0b50-5900-4e0b-bbe0-1fef2f05c209)
 
 É importante realizar os Health Checks do IOT Agent MQTT, do STH-Comet e do Orion Context Broker:
 ![image](https://github.com/user-attachments/assets/64d82cd1-ded9-4a06-91c5-7e4053d5362e)
