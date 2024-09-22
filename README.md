@@ -31,6 +31,8 @@ A Tech Mahindra nos desafiou a aumentar a visibilidade da Fórmula E, uma modali
 - Tudo isso irá introduzir os alunos ao meio da Fórmula E, trazendo uma maior visibilidade a modalidade.
 
 ## 💡 Nossa entrega para a Sprint 3 da matéria Edge Computing
+
+### Wokwi
 Para esta entrega, desenvolvemos um protótipo de motor de carrinho elétrico no simulador Wokwi, onde é possível controlar sua direção (b: para trás, f: para frente, s: parar) e sua velocidade através do serial do simulador, via comandos:
 
 ![image](https://github.com/user-attachments/assets/a24c2465-6566-4395-8e59-9e95b05fd763)
@@ -45,3 +47,4 @@ O Postman facilita a manipulação do JSON, separando cada funcionalidade por ab
 
 ![image](https://github.com/user-attachments/assets/c711ad81-3f79-4284-a3df-72ef2c3d1f63)
 
+Mas antes de mexermos nas abas, é necessário explicar toda essa comunicação entre o Postman e o Wokwi só é possível porque a API do Fiware Descomplicado do professor Fábio Cabrini está instalada em uma máquina virtual 
