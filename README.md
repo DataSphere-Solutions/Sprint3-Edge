@@ -33,3 +33,7 @@ A Tech Mahindra nos desafiou a aumentar a visibilidade da Fórmula E, uma modali
 ## 💡 Nossa entrega para a Sprint 3 da matéria Edge Computing
 Para esta entrega, desenvolvemos um protótipo de motor de carrinho elétrico no simulador Wokwi, onde é possível controlar sua direção (b: para trás, f: para frente, s: parar) e sua velocidade através do serial do simulador, via comandos:
 ![image](https://github.com/user-attachments/assets/a24c2465-6566-4395-8e59-9e95b05fd763)
+Neste exemplo, foi digitado "f 80", atualizando a direção do motor para frente e sua velocidade para 80.
+
+Além disso, é feito uma conexão com o WiFi do simulador, possibilitando assim o envio e recebimento dos dados de direção e velocidade por uma API. Essa API pode ser gerenciada pelo programa Postman:
+![image](https://github.com/user-attachments/assets/de7457e0-7811-44d6-8af4-de45a14768b2)
