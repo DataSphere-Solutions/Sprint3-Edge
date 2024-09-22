@@ -38,4 +38,10 @@ Para esta entrega, desenvolvemos um protótipo de motor de carrinho elétrico no
 Neste exemplo, foi digitado "f 80", atualizando a direção do motor para frente e sua velocidade para 80.
 
 Além disso, é feito uma conexão com o WiFi do simulador, possibilitando assim o envio e recebimento dos dados de direção e velocidade por uma API. Essa API pode ser gerenciada pelo programa Postman:
+
 ![image](https://github.com/user-attachments/assets/de7457e0-7811-44d6-8af4-de45a14768b2)
+
+O Postman facilita a manipulação do JSON, separando cada funcionalidade por abas:
+
+![image](https://github.com/user-attachments/assets/c711ad81-3f79-4284-a3df-72ef2c3d1f63)
+
