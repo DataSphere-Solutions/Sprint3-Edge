@@ -41,6 +41,10 @@ Neste exemplo, foi digitado "f 80", atualizando a direção do motor para frente
 ### Link do Projeto:
 - https://wokwi.com/projects/409742956091395073
 
+### Componentes utilizados no simulador:
+- 1 ESP32;
+- 1 Custom chip desenvolvido para agir como um motor.
+
 ### Máquina Virtual
 Foi hospedada uma máquina virtual com sistema operacional Ubuntu Server na Microsoft Azure, aberta todas as portas necessárias para comunicação e instalado o Fiware Descomplicado, do professor Fábio Cabrini. Isso possibilitará a comunicação do Wokwi com o Postman:
 
@@ -82,7 +86,10 @@ Com os dados que o servidor recebe do Wokwi, através de um código em Python el
 
 ## Arquitetura da Aplicação IoT
 ![FiwareDeploy_new_v4](https://github.com/user-attachments/assets/6ce7e660-f515-4aa7-8df5-9b4e138a9f73)
-
+Nosso projeto possui 3 camadas: 
+- IoT (Nesse caso, a ESP32 conectada ao Motor no simulador), que recebe e envia dados;
+- Back-end, responsável por tratar e encaminhar todos os dados recebidos e enviados. Na nossa arquitetura, o MQTT, o Orion e o STH-Comet que estão hospedados no nosso servidor são os agentes responsáveis por todo esse processo por trás dos panos.
+- Aplicação (Nesse caso o Dashboard), responsável por mostrar todos os dados de maneira formatada, organizada e simplificada ao usuário.
 
 
 
