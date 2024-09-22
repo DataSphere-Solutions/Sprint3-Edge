@@ -30,7 +30,7 @@
 					"response": []
 				},
 				{
-					"name": "2. Provisioning a Service Group for MQTT",
+					"name": "2. Provisionando o Service Group para o MQTT",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -70,7 +70,7 @@
 					"response": []
 				},
 				{
-					"name": "2.1 Health Check Services",
+					"name": "2.1 Serviços de Health Check",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -101,7 +101,7 @@
 					"response": []
 				},
 				{
-					"name": "2.1 Delete a Service Group",
+					"name": "2.1 Deletar um Service Group",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -227,7 +227,7 @@
 					"response": []
 				},
 				{
-					"name": "5. List all Devices Provisioned",
+					"name": "5. Listar todos os Devices Provisionados",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -280,10 +280,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"on\": {\n      \"type\" : \"command\",\n      \"value\" : \"\"\n  }\n}"
+							"raw": "{\n  \"f\": { // Envia o comando para mudar a direção do motor para frente\n    \"type\": \"command\",\n    \"value\": \"20\"  // Envia o valor da velocidade\n  }\n}\n"
 						},
 						"url": {
-							"raw": "http://{{url}}:1026/v2/entities/urn:ngsi-ld:Lamp:001/attrs",
+							"raw": "http://{{url}}:1026/v2/entities/urn:ngsi-ld:Motor:003/attrs",
 							"protocol": "http",
 							"host": [
 								"{{url}}"
@@ -292,7 +292,7 @@
 							"path": [
 								"v2",
 								"entities",
-								"urn:ngsi-ld:Lamp:001",
+								"urn:ngsi-ld:Motor:003",
 								"attrs"
 							]
 						}
@@ -405,7 +405,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{url}}:1026/v2/entities/urn:ngsi-ld:Lamp:001/attrs/luminosity",
+							"raw": "http://{{url}}:1026/v2/entities/urn:ngsi-ld:Motor:003/attrs/speed",
 							"protocol": "http",
 							"host": [
 								"{{url}}"
@@ -414,9 +414,9 @@
 							"path": [
 								"v2",
 								"entities",
-								"urn:ngsi-ld:Lamp:001",
+								"urn:ngsi-ld:Motor:003",
 								"attrs",
-								"luminosity"
+								"speed"
 							]
 						}
 					},
@@ -462,7 +462,7 @@
 					"response": []
 				},
 				{
-					"name": "9. Delete Smart Lamp in IoT Agent",
+					"name": "9. Deletar Device do IoT Agent",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -494,7 +494,7 @@
 					"response": []
 				},
 				{
-					"name": "10. Delete Smart Lamp in Orion",
+					"name": "10. Deletar Device do Orion",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -581,7 +581,7 @@
 					"response": []
 				},
 				{
-					"name": "2. Subscribe Luminosity",
+					"name": "2. Registrar Comandos",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -603,7 +603,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"description\": \"Notify STH-Comet of all Motion Sensor count changes\", // Descrição da notificação\r\n  \"subject\": {\r\n    \"entities\": [\r\n      {\r\n        \"id\": \"urn:ngsi-ld:Lamp:001\",\r\n        \"type\": \"Lamp\"\r\n      }\r\n    ],\r\n    \"condition\": { \"attrs\": [\"luminosity\"] } // Condição para acionar a notificação (alteração de luminosidade)\r\n  },\r\n  \"notification\": {\r\n    \"http\": {\r\n      \"url\": \"http://{{url}}:8666/notify\" // URL para notificação do STH-Comet\r\n    },\r\n    \"attrs\": [\r\n      \"luminosity\" // Atributo a ser notificado (luminosidade)\r\n    ],\r\n    \"attrsFormat\": \"legacy\" // Formato dos atributos a ser notificado (legado)\r\n  }\r\n}"
+							"raw": "{\r\n  \"description\": \"Notify STH-Comet of all Motor command changes\", // Descrição da notificação\r\n  \"subject\": {\r\n    \"entities\": [\r\n      {\r\n        \"id\": \"urn:ngsi-ld:Motor:003\", // ID do motor\r\n        \"type\": \"Motor\" // Tipo da entidade\r\n      }\r\n    ],\r\n    \"condition\": { \"attrs\": [\"direction\", \"speed\"] } // Condição para acionar a notificação (alterações de direção e velocidade)\r\n  },\r\n  \"notification\": {\r\n    \"http\": {\r\n      \"url\": \"http://{{url}}:8666/notify\" // URL para notificação do STH-Comet\r\n    },\r\n    \"attrs\": [\r\n      \"direction\", // Atributo a ser notificado (direção)\r\n      \"speed\"     // Atributo a ser notificado (velocidade)\r\n    ],\r\n    \"attrsFormat\": \"legacy\" // Formato dos atributos a serem notificados (legado)\r\n  }\r\n}\r\n"
 						},
 						"url": {
 							"raw": "http://{{url}}:1026/v2/subscriptions",
@@ -621,7 +621,7 @@
 					"response": []
 				},
 				{
-					"name": "3. Request Speed",
+					"name": "3. Request da Velocidade",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -637,7 +637,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{url}}:8666/STH/v1/contextEntities/type/Lamp/id/urn:ngsi-ld:Motor:003/attributes/speed?lastN=30",
+							"raw": "http://{{url}}:8666/STH/v1/contextEntities/type/Motor/id/urn:ngsi-ld:Motor:003/attributes/speed?lastN=30",
 							"protocol": "http",
 							"host": [
 								"{{url}}"
@@ -648,7 +648,7 @@
 								"v1",
 								"contextEntities",
 								"type",
-								"Lamp",
+								"Motor",
 								"id",
 								"urn:ngsi-ld:Motor:003",
 								"attributes",
@@ -702,7 +702,7 @@
 					"response": []
 				},
 				{
-					"name": "3. Request Speed Copy",
+					"name": "4. Request da Direção",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -718,7 +718,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://{{url}}:8666/STH/v1/contextEntities/type/Lamp/id/urn:ngsi-ld:Motor:003/attributes/speed?lastN=30",
+							"raw": "http://{{url}}:8666/STH/v1/contextEntities/type/Motor/id/urn:ngsi-ld:Motor:003/attributes/direction?lastN=30",
 							"protocol": "http",
 							"host": [
 								"{{url}}"
@@ -729,11 +729,11 @@
 								"v1",
 								"contextEntities",
 								"type",
-								"Lamp",
+								"Motor",
 								"id",
 								"urn:ngsi-ld:Motor:003",
 								"attributes",
-								"speed"
+								"direction"
 							],
 							"query": [
 								{
