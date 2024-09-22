@@ -75,9 +75,14 @@ Importante: Definir a variável {{url}} como o IP do servidor.
 
 - Nesta lista de operações, é possível receber os dados de velocidade e direção, bem como enviá-los ao Wokwi.
 
-## Dashboard
+### Dashboard
 Com os dados que o servidor recebe do Wokwi, através de um código em Python ele plota uma Dashboard online, onde qualquer pessoa pode acessar, com dois gráficos: O da velocidade e velocidade média, e o da direção, ambos os gráficos são atualizados em tempo real:
 ![image](https://github.com/user-attachments/assets/43868954-4093-43cb-b948-802f95a29a1d)
+
+
+## Arquitetura da Aplicação IoT
+![FiwareDeploy_new_v4](https://github.com/user-attachments/assets/6ce7e660-f515-4aa7-8df5-9b4e138a9f73)
+
 
 
 
