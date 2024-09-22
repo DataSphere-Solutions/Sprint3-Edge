@@ -46,6 +46,7 @@ Foi hospedada uma máquina virtual com sistema operacional Ubuntu Server na Micr
 
 ![image](https://github.com/user-attachments/assets/649b2361-9b24-44e7-9d97-52494bcf4f30)
 
+### Postman
 
 Além disso, é feito uma conexão com o WiFi do simulador, possibilitando assim o envio e recebimento dos dados de direção e velocidade por uma API. Essa API pode ser gerenciada pelo programa Postman:
 
