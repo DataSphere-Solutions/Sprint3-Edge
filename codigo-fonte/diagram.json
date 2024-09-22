@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Ian Monteiro Moreira",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 4.7, "left": 4.6, "attrs": {} },
+    { "type": "chip-motor", "id": "chip1", "top": -66.18, "left": -4.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "esp:D18", "chip1:IN", "green", [ "h18.9", "v-134.4" ] ],
+    [ "esp:D19", "chip1:IN", "green", [ "h28.5", "v-124.9" ] ],
+    [ "esp:GND.1", "chip1:GND", "black", [ "h9.3", "v-182.5", "h-115.2" ] ]
+  ],
+  "dependencies": {}
+}
