@@ -41,6 +41,12 @@ Neste exemplo, foi digitado "f 80", atualizando a direção do motor para frente
 ### Link do Projeto:
 - https://wokwi.com/projects/409742956091395073
 
+### Máquina Virtual
+Foi hospedada uma máquina virtual com sistema operacional Ubuntu Server na Microsoft Azure, aberta todas as portas necessárias para comunicação e instalado o Fiware Descomplicado, do professor Fábio Cabrini. Isso possibilitará a comunicação do Wokwi com o Postman:
+
+![image](https://github.com/user-attachments/assets/649b2361-9b24-44e7-9d97-52494bcf4f30)
+
+
 Além disso, é feito uma conexão com o WiFi do simulador, possibilitando assim o envio e recebimento dos dados de direção e velocidade por uma API. Essa API pode ser gerenciada pelo programa Postman:
 
 ![image](https://github.com/user-attachments/assets/de7457e0-7811-44d6-8af4-de45a14768b2)
@@ -49,4 +55,3 @@ O Postman facilita a manipulação do JSON, separando cada funcionalidade por ab
 
 ![image](https://github.com/user-attachments/assets/c711ad81-3f79-4284-a3df-72ef2c3d1f63)
 
-Mas antes de mexermos nas abas, é necessário explicar toda essa comunicação entre o Postman e o Wokwi só é possível porque a API do Fiware Descomplicado do professor Fábio Cabrini está instalada em uma máquina virtual 
