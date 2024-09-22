@@ -38,8 +38,8 @@ Para esta entrega, desenvolvemos um protótipo de motor de carrinho elétrico no
 ![image](https://github.com/user-attachments/assets/a24c2465-6566-4395-8e59-9e95b05fd763)
 
 Neste exemplo, foi digitado "f 80", atualizando a direção do motor para frente e sua velocidade para 80.
-Link do Projeto:
-- https://wokwi.com/projects/409742956091395073
+- Link do Projeto:
+ - https://wokwi.com/projects/409742956091395073
 
 Além disso, é feito uma conexão com o WiFi do simulador, possibilitando assim o envio e recebimento dos dados de direção e velocidade por uma API. Essa API pode ser gerenciada pelo programa Postman:
 
